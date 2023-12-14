@@ -1,0 +1,20 @@
+﻿@page
+@model Phase4EndProject.Pages.OrderConfirmationModel
+@{
+    ViewData["Title"] = "Order Confirmation";
+}
+
+<br />
+
+<h1>Order Confirmed...</h1>
+<h2>Thanks for Ordering... Visit again...</h2>
+
+<div>
+    <strong>Selected Pizza Type:</strong> @Model.PizzaName
+</div>
+<div>
+    <strong>Quantity:</strong> @Model.Quantity
+</div>
+<div>
+    <strong>Total Amount:</strong> @Model.TotalAmount.ToString("C")
+</div>

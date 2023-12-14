@@ -1,0 +1,21 @@
+﻿@page
+@model Phase4EndProject.Pages.OrderCheckoutModel
+@{
+    ViewData["Title"] = "Order Checkout";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<div>
+    <strong>Selected Pizza Type:</strong> @Model.PizzaName
+</div>
+<div>
+    <strong>Quantity:</strong> @Model.Quantity
+</div>
+<div>
+    <strong>Total Price:</strong> @Model.TotalPrice.ToString("C")
+</div>
+
+<form method="post">
+    <input type="submit" value="Checkout" />
+</form>
